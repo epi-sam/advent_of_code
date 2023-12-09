@@ -24,7 +24,6 @@ first_last_digit <- lapply(seq_along(sam), function(item){
   idx_b <- first_last_index[[item]][2]
   a <- as.integer(substr(string, idx_a, idx_a))
   b <- as.integer(substr(string, idx_b, idx_b))
-  # return(c(a,b))
   return(as.integer(paste(c(a,b), collapse = "")))
 })
 
